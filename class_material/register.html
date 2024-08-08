@@ -4,16 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
+    <script>
+ function printer(event) {
+
+const formdata= new FormData(event.target);
+const vall= Object.fromEntries(formdata);
+
+    val = document.getElementById("form")
+    val2 = document.getElementById("user")
+    console.log(vall)
+    	 console.log(val)
+    console.log(val2)
+ }
+
+    </script>
 </head>
 <body>
-    <h1>hemendra pvt ltd.</h1>
-    <form action="form.html">
+    <h1>hemendra pvt ltd.</h1> <br>
+    <h2>Registration Form</h2>
+    <form action="" method="post" id = "form" onsubmit="printer(event)">
         <label for="Username" >Username</label>
-        <input type="text" placeholder="enter your username" name="username"> <br>
-        <label for="Name">Name</label>
+        <input type="text" placeholder="enter your username" name="username"id="user" > <br>
+        <label for="Name">Name</label>  
         <input type="text" placeholder="enter your name" name="name"> <br>
-        <label for="Password">Password</label>
-        <input type="text" placeholder="enter your password" name="password"> <br>
+        <label for="Password" >Password</label>
+        <input type="text" placeholder="enter your password" name="password" > <br>
         <label for="Phone">Phone number</label>
         <input type="number" placeholder="enter your phone number" name="phone">
         <br>
@@ -22,7 +37,7 @@
         <input type="radio" name="Gender" id="" value="Female">female
         <input type="radio" name="Gender" id="" value="Other">other
         <br>
-        <button type="submit">Register</button>
+        <button type="submit" id="register">Register</button>
     </form>
 </body>
 </html>
