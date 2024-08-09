@@ -18,6 +18,58 @@ color: green;
     #grr{
         color: black;
     }
+
+    [target]{
+        color: rgb(225, 166, 166);
+    }
+
+    [target="_blank"]{
+color: blueviolet;
+    }
+  
+
+  div{
+    background-color:  rgb(149, 235, 235);
+  }
+/* if we want to add the css to the child of a parent:  child  selector, */
+  div>p{
+    background-color: rgb(172, 125, 216);
+  } 
+/* if the level is the issue , then we can use this, like descendent selector */
+  div p{
+    background-color: aquamarine;
+  }
+  /* for the siblings child */
+  div+p{
+    background-color: rgb(96, 100, 179);
+  }
+
+  /* div ~ p{
+background-color: aqua;
+  } */
+  /* p:hover{
+    font-size: larger;
+ color: burlywood;
+} */
+a::selection{
+    color: rgb(54, 201, 201);
+    background-color: rgb(255, 136, 0);
+}
+.visible{
+display: none;
+
+}
+.visible:hover p{
+    display: block;
+}
+strong{
+    color: green;
+
+}
+strong+strong{
+    color: black;
+}
+  
     </style>
 </head>
 <body>
@@ -31,5 +83,35 @@ color: green;
     <h4>hello</h4>
 
     <p class="hyy" id="grr"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et, dolorum hic? Quam consequuntur esse nobis accusantium impedit tenetur iure, voluptates praesentium neque modi sapiente. Ipsam aliquid veniam minus repudiandae tempore!</p>
-</body>
+
+    <a href="http://" target="">this link</a>
+    <a href="http://" target="_blank">this link</a>
+    <a href="http://" target="">this link</a>
+    <a href="http://" target="_blank">this link</a>
+    <a href="http://" target="">this link</a>
+
+
+
+    <div>
+        <section>
+            <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas laboriosam commodi dolore corrupti, recusandae molestias, ullam illo dolorum deserunt, et repudiandae sapiente distinction</p>
+        </section>
+        <p>test2</p>
+        <p>test3</p>
+       
+        <p>test4</p>
+    </div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque amet, ducimus dignissimos sequi, esse harum, error inventore cumque deserunt id quos dolorum voluptas repudiandae? Et nesciunt harum repudiandae est, repellat commodi explicabo.</p>
+
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt assumenda rem id mollitia adipisci eligendi? Soluta, adipisci modi. Voluptate nostrum quis vitae minus dolorem laudantium quaerat excepturi explicabo dicta sit!</p>
+    
+    <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora accusamus corporis quo quia nisi molestiae fugit rerum reiciendis esse voluptatem. <section>hwdfwejkfewjk</section>
+    
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, optio!
+            <div class="visible"> Lorem ipsum dolor sit amet,<strong>   consectetur</strong> adipisicing <strong>elit.</strong> Ipsum, ut delectus? Fuga?</div>
+        </p>
+
+   
+    </body>
 </html>
