@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css Basics</title>
+    <style> 
+        .header, .footer, .content, .navigation {
+            border: 1px;
+            /* border-radius: 2px; */
+            border-color: black;
+            border-style: solid;
+            height: auto;
+            width: 100%;
+
+
+        }
+.bigboss{
+    width: 50%;
+}
+        .content{
+            writing-mode:  horizontal-tb;
+        margin: 10px;
+            /* writing-mode: vertical-lr; */
+        }
+
+        .main
+        { 
+            display: flex;
+            /* margin-right: 5px; */
+            padding: 5px;
+
+        }
+
+        #stick{
+            border: 2px solid;
+            color: blue;
+            height: auto;
+            width: fit-content;
+            position: sticky;
+            margin: left 500px ;
+            padding-left: 20%;
+            writing-mode: vertical-lr;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="bigboss">
+    
+        <div class="header">header</div>
+        <div class="navigation">navigation</div>
+      
+      <div class="main">
+
+          <div class="content">content
+        </div>
+        <div class="content">content </div>
+        <div class="header">content</div>
+    </div>
+        <div class="footer"><b>footer content</b> Lorem ipsum, dolor sit ametias est vero? Repellendus ipsa minus repudiandae provident ut ipsam aliquid quam enim quia voluptates quas voluptatem fugiat placeat eius, totam unde?  dolor saepe abiis!</div>
+        <div id="stick"> stickyone</div>
+    </div>
+</body>
+</html>
