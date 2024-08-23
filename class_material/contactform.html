@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact form</title>
+  </head>
+  <body>
+    <script>
+      const getdata = async () => {
+        let data = await fetch("https://catfact.ninja/fact");
+        //   let data = await fetch("https://dog.ceo/api/breeds/image/random");
+        data = await data.json();
+        const atag = document.createElement("div");
+        atag.textContent = data.fact;
+        document.body.appendChild(atag);
+      };
+
+      getdata();
+    </script>
+  </body>
+</html>
