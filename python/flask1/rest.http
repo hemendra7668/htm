@@ -1,0 +1,16 @@
+@host = {{localhost5000}}
+
+GET http://127.0.0.1:5000
+
+
+POST {{host}}/register
+
+Content-Type: application/json
+
+{
+    "message": "ok",
+    "email":"abcd@gmail.com",
+    "fullname": "Sample2",
+    "password": "123456"
+}
+

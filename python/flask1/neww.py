@@ -4,7 +4,7 @@ from pymongo import MongoClient
 
 from flask_cors import CORS   #pip install flask_cors
 
-app = Flask(_name_)
+app = Flask(__name__)
 
 cors=CORS(app,resources={r"/":{"origins":""}})
 
@@ -17,7 +17,7 @@ mdb=client['gla']
 
 @app.route("/")
 def hello_world():
-    return "<p>Hello, World! rahul kumarz Xawier</p>"
+    return "<p>Hello, World! hemendra kumar </p>"
 
 
 @app.route("/home")
@@ -74,7 +74,6 @@ def forloop():
         'payload':{
             'total':total,
             'values':[1,2,3,5,6,8]
-
         }
         
         
